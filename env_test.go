@@ -7,7 +7,7 @@ import (
 	"testing"
 )
 
-func assertEqual(t *testing.T, expected, actual interface{}) {
+func assertEqual(t *testing.T, expected, actual any) {
 	if expected != actual {
 		t.Errorf("Not equal: \nexpected: %v\n actual  : %v",
 			expected,
